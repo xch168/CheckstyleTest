@@ -4,8 +4,11 @@
     "http://www.puppycrawl.com/dtds/configuration_1_3.dtd">
 
 <module name="Checker">
-    <module name="SuppressWarningsFilter"/>
+    <property name="charset" value="UTF-8"/>
+
+    <!--文件要以空行结尾-->
     <module name="NewlineAtEndOfFile"/>
+
     <module name="FileLength"/>
     <module name="FileTabCharacter"/>
 
@@ -28,7 +31,6 @@
     </module>
 
     <module name="TreeWalker">
-        <property name="cacheFile" value="${checkstyle.cache.file}"/>
 
         <!-- Checks for Javadoc comments.                     -->
         <!-- See http://checkstyle.sf.net/config_javadoc.html -->
